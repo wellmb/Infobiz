@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Модуль 4 · Анализ — Crypto Insiders</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-module">
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+
+  <header class="dash-header">
+    <a href="landing.html" class="dash-brand" lang="en"><span>Crypto</span><span>Insiders</span></a>
+    <nav class="module-header-nav" aria-label="Навигация по курсу">
+      <a href="landing.html#modules">Все модули</a>
+    </nav>
+  </header>
+
+  <main class="module-lesson">
+    <article class="card">
+      <p class="eyebrow">Модуль 04 · Анализ</p>
+      <h1 class="title">Как не купить «пустышку»</h1>
+      <p class="lead">
+        Соединяем цифры, публичную информацию и поведение толпы: отличаем проект с опорой на продукт от хайпа на один день.
+      </p>
+
+      <section class="content-block" aria-labelledby="m4-topics">
+        <h2 id="m4-topics">Ключевые темы</h2>
+        <ul class="topic-list">
+          <li>
+            <strong>Фундаментальные показатели.</strong> Капитализация, оборот, эмиссия и разблокировки токенов, доля у команды/инвесторов, наличие рабочего продукта. Если рост цены не подкреплён метриками — это сигнал осторожности, а не «FOMO».
+          </li>
+          <li>
+            <strong>Где искать инфу.</strong> CoinMarketCap / CoinGecko для базовых данных; официальные блоги и репозитории; Twitter/X и профильные фаундеры — но с фильтром на ботов и накрученные подписчики. Сверяйте анонсы с первоисточником.
+          </li>
+          <li>
+            <strong>Психология рынка.</strong> Индексы страха и жадности, перегретые funding rates, «все внуки уже в теме» — маркеры перегрева. На падении ищем не «дно угадыванием», а управление риском и сценарии, которые вы держите в голове до входа.
+          </li>
+        </ul>
+      </section>
+
+      <p class="result-callout">
+        <strong>Результат:</strong> отличаешь перспективный проект от щиткоина на один день — по чек-листу, а не по аватарке в Telegram.
+      </p>
+
+      <div class="module-pager">
+        <a href="exchange.html">← Биржи и P2P</a>
+        <a href="legal.html">Далее: Налоги и легализация →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var SESSION_KEY = "site_landing_unlocked";
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) !== "1") location.replace("index.html");
+      } catch (e) {
+        location.replace("index.html");
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Модуль 3 · Биржи и P2P — Crypto Insiders</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-module">
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+
+  <header class="dash-header">
+    <a href="landing.html" class="dash-brand" lang="en"><span>Crypto</span><span>Insiders</span></a>
+    <nav class="module-header-nav" aria-label="Навигация по курсу">
+      <a href="landing.html#modules">Все модули</a>
+    </nav>
+  </header>
+
+  <main class="module-lesson">
+    <article class="card">
+      <p class="eyebrow">Модуль 03 · Биржи и P2P</p>
+      <h1 class="title">Практика ввода и вывода денег</h1>
+      <p class="lead">
+        От первой регистрации до перевода между площадками: фиат через P2P, типы ордеров и выбор сети, чтобы не сжечь комиссией и не отправить не туда.
+      </p>
+
+      <section class="content-block" aria-labelledby="m3-topics">
+        <h2 id="m3-topics">Ключевые темы</h2>
+        <ul class="topic-list">
+          <li>
+            <strong>Регистрация и KYC.</strong> Паспорт, селфи, иногда proof of address — нормальная плата за фиатные рампы. Важно: включить 2FA сразу после создания аккаунта и не использовать один пароль везде.
+          </li>
+          <li>
+            <strong>Покупка крипты через P2P за фиат.</strong> Смотрим на рейтинг мейкера, лимиты, способ оплаты, количество сделок. Не выходим за рамки escrow-инструкций и не переводим «напрямую» до подтверждения сделки на платформе.
+          </li>
+          <li>
+            <strong>Лимитные и рыночные ордера.</strong> Рыночный — исполнение «здесь и сейчас» по лучшей цене стакана. Лимитный — вы сами задаёте цену; сделка пройдёт, когда рынок дойдёт до вашего уровня (или не пройдёт).
+          </li>
+          <li>
+            <strong>Перевод между биржами и сети.</strong> USDT и другие активы живут в разных сетях: ERC-20 (Ethereum), TRC-20 (Tron), BEP-20 (BNB Chain) и т.д. Адрес получателя и выбранная сеть должны совпадать; иначе средства потеряны. Сравнивайте комиссию и скорость перед выводом.
+          </li>
+        </ul>
+      </section>
+
+      <p class="result-callout">
+        <strong>Результат:</strong> умеешь покупать дешевле ленивых сценариев (через выбор P2P и лимитов) и выводить безопасно — без «красных» сетей и лишних посредников.
+      </p>
+
+      <div class="module-pager">
+        <a href="security.html">← Безопасность</a>
+        <a href="analysis.html">Далее: Анализ →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var SESSION_KEY = "site_landing_unlocked";
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) !== "1") location.replace("index.html");
+      } catch (e) {
+        location.replace("index.html");
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Модуль 2 · Безопасность — Crypto Insiders</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-module">
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+
+  <header class="dash-header">
+    <a href="landing.html" class="dash-brand" lang="en"><span>Crypto</span><span>Insiders</span></a>
+    <nav class="module-header-nav" aria-label="Навигация по курсу">
+      <a href="landing.html#modules">Все модули</a>
+    </nav>
+  </header>
+
+  <main class="module-lesson">
+    <article class="card">
+      <p class="eyebrow">Модуль 02 · Безопасность · главный блок</p>
+      <h1 class="title">Защита активов от взлома и фишинга</h1>
+      <p class="lead">
+        Здесь решается, останутся ли деньги у вас: сид-фраза, типы кошельков, 2FA и привычка проверять ссылки до клика.
+      </p>
+
+      <section class="content-block" aria-labelledby="m2-topics">
+        <h2 id="m2-topics">Ключевые темы</h2>
+        <ul class="topic-list">
+          <li>
+            <strong>Сид-фраза (seed).</strong> Это мастер-ключ от кошелька. Её нельзя хранить в заметках на телефоне, в почте, в облаке и тем более отправлять «поддержке». Пишите офлайн, храните в недоступном месте; одна утечка = полный слив средств.
+          </li>
+          <li>
+            <strong>Горячие vs холодные кошельки.</strong> MetaMask и приложения бирж — «горячие»: удобно для мелочи и активной торговли, но поверхность атаки больше. Ledger / Trezor и аналоги — «холодные»: ключ не покидает устройство; для крупных сумм и долгого хранения это база.
+          </li>
+          <li>
+            <strong>Двухфакторная аутентификация (2FA).</strong> На бирже включаем аппаратный ключ или TOTP (Google Authenticator и т.п.), а не SMS, если есть выбор. Сим-карту можно перевыпустить; пуш/SMS — частый вектор.
+          </li>
+          <li>
+            <strong>Как проверять ссылки на скам.</strong> Сверяйте домен буква в букву, не переходите из «вторых» чатов, используйте закладки, смотрите на сертификат и адрес контракта при взаимодействии с DeFi. Если просят сид или «проверочный перевод» — это 100% мошенники.
+          </li>
+        </ul>
+      </section>
+
+      <p class="result-callout">
+        <strong>Результат:</strong> твои деньги не украдут, даже если взломают почту — потому что критичные вещи (сид, подтверждения с холодного ключа) останутся вне досягаемости.
+      </p>
+
+      <div class="module-pager">
+        <a href="foundation.html">← Фундамент</a>
+        <a href="exchange.html">Далее: Биржи и P2P →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var SESSION_KEY = "site_landing_unlocked";
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) !== "1") location.replace("index.html");
+      } catch (e) {
+        location.replace("index.html");
+      }
+    })();
+  </script>
+</body>
+</html>

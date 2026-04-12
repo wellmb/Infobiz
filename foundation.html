@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Модуль 1 · Фундамент — Crypto Insiders</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-module">
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+
+  <header class="dash-header">
+    <a href="landing.html" class="dash-brand" lang="en"><span>Crypto</span><span>Insiders</span></a>
+    <nav class="module-header-nav" aria-label="Навигация по курсу">
+      <a href="landing.html#modules">Все модули</a>
+    </nav>
+  </header>
+
+  <main class="module-lesson">
+    <article class="card">
+      <p class="eyebrow">Модуль 01 · Фундамент</p>
+      <h1 class="title">Блокчейн без заумных слов</h1>
+      <p class="lead">
+        Разбираем, как устроена технология с нуля: зачем она нужна, почему биткоин сложно «нарисовать» из воздуха и чем монета отличается от токена.
+      </p>
+
+      <section class="content-block" aria-labelledby="m1-topics">
+        <h2 id="m1-topics">Ключевые темы</h2>
+        <ul class="topic-list">
+          <li><strong>Децентрализация.</strong> Нет одного «начальника сети»: правила прописаны в коде, а копии реестра хранят тысячи узлов. Если один выключить — цепочка продолжит жить.</li>
+          <li><strong>Почему биткоин нельзя подделать.</strong> История переводов связана криптографией: изменить «задним числом» одну операцию = пересчитать всю цепочку блоков, что экономически невыгодно и технически почти нереально для атакующего.</li>
+          <li><strong>Монета и токен.</strong> Монета живёт в своей сети (BTC в биткоине, ETH в Ethereum). Токен — учётная единица поверх чужой сети (часто ERC-20 в Ethereum): проще запустить, но зависимость от платформы выше.</li>
+          <li><strong>Как проходит транзакция.</strong> Вы подписываете действие приватным ключом → сеть проверяет подпись и правила → запись попадает в блок → блок закрепляется в цепочке. «Ждать подтверждений» — это как раз накопление доверия к записи.</li>
+        </ul>
+      </section>
+
+      <p class="result-callout">
+        <strong>Результат:</strong> ты понимаешь технологию на уровне «объясню бабушке» — без магии и страха перед белыми досками в Twitter.
+      </p>
+
+      <div class="module-pager">
+        <a href="landing.html#modules">← Все модули</a>
+        <a href="security.html">Далее: Безопасность →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var SESSION_KEY = "site_landing_unlocked";
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) !== "1") location.replace("index.html");
+      } catch (e) {
+        location.replace("index.html");
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Модуль 6 · Практика — Crypto Insiders</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-module">
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+
+  <header class="dash-header">
+    <a href="landing.html" class="dash-brand" lang="en"><span>Crypto</span><span>Insiders</span></a>
+    <nav class="module-header-nav" aria-label="Навигация по курсу">
+      <a href="landing.html#modules">Все модули</a>
+    </nav>
+  </header>
+
+  <main class="module-lesson">
+    <article class="card">
+      <p class="eyebrow">Модуль 06 · Практика 🛠</p>
+      <h1 class="title">Действия и воркшопы</h1>
+      <p class="lead">
+        Самый популярный вариант для онлайн-курсов — когда теория превращается в опыт: чек-листы, симуляции сделок и разбор ошибок вместо «просто посмотреть видео».
+      </p>
+
+      <section class="content-block" aria-labelledby="m6-topics">
+        <h2 id="m6-topics">Ключевые темы</h2>
+        <ul class="topic-list">
+          <li><strong>Микро-задания после каждого блока.</strong> Закрепляем навык маленькими шагами: кошелёк, тестовая сеть, P2P на минимальной сумме.</li>
+          <li><strong>Разбор реальных сценариев.</strong> От «как вывести без фриза» до «как не нажать на фишинговый approve» — вместе проходим интерфейсы.</li>
+          <li><strong>Обратная связь по скриншотам.</strong> Вы присылаете шаги, мы отмечаем риски и даём точечные правки под ваш стиль торговли.</li>
+        </ul>
+      </section>
+
+      <p class="result-callout">
+        <strong>Результат:</strong> к концу модуля руки «помнят» процесс — от входа на биржу до безопасного вывода, без хаоса в моменте X.
+      </p>
+
+      <div class="module-pager">
+        <a href="legal.html">← Налоги и легализация</a>
+        <a href="strategy.html">Далее: Стратегии →</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    (function () {
+      var SESSION_KEY = "site_landing_unlocked";
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) !== "1") location.replace("index.html");
+      } catch (e) {
+        location.replace("index.html");
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crypto Insiders — личный кабинет</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-dashboard">
+  <div class="bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+  </div>
+
+  <header class="dash-header">
+    <a href="#hero" class="dash-brand" lang="en"><span>Crypto</span><span>Insiders</span></a>
+    <div class="dash-rates" id="dash-rates" aria-live="polite">
+      <span class="rate-pill"><span class="rate-pill__sym">BTC</span> <span id="rate-btc">—</span></span>
+      <span class="rate-pill"><span class="rate-pill__sym">ETH</span> <span id="rate-eth">—</span></span>
+    </div>
+  </header>
+
+  <main class="dash-main">
+    <div class="landing-stage page" id="landing-stage">
+      <article class="card" id="hero">
+        <p class="eyebrow reveal">Закрытый пул · 2026</p>
+        <h1 class="title reveal">Crypto Insiders: Твой вход в закрытый пул ликвидности</h1>
+        <p class="lead reveal">
+          Получи доступ к стратегиям, которые обходят рынок. Никакой воды, только чистый профит.
+        </p>
+
+        <div class="actions-row reveal">
+          <a class="btn btn--grow" href="#modules">
+            К модулям курса
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <div class="proof" role="group" aria-label="Социальное доказательство">
+            <div class="avatars" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span><strong>5000+</strong> трейдеров · ROI в среднем вырос на <strong>38%</strong></span>
+          </div>
+        </div>
+
+        <div class="timer-block reveal">
+          <div class="timer-head">
+            <span class="timer-title">Скидка на поток — скоро сгорит</span>
+            <span class="timer-badge">−40%</span>
+          </div>
+          <div class="timer" id="timer" aria-live="polite">
+            <div class="timer-cell">
+              <span class="timer-value" id="d">00</span>
+              <span class="timer-label">дней</span>
+            </div>
+            <div class="timer-cell">
+              <span class="timer-value" id="h">00</span>
+              <span class="timer-label">часов</span>
+            </div>
+            <div class="timer-cell">
+              <span class="timer-value" id="m">00</span>
+              <span class="timer-label">минут</span>
+            </div>
+            <div class="timer-cell">
+              <span class="timer-value" id="s">00</span>
+              <span class="timer-label">секунд</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="dash-section modules-section" id="modules" aria-labelledby="modules-heading">
+      <h2 id="modules-heading" class="section-heading">Модули курса</h2>
+      <p class="section-lead">
+        Сетка 3×3: яркие карточки как на макете — от фундамента и безопасности до воркшопов, стратегии, Web3 и психологии. Эмодзи справа помогают быстро найти тему.
+      </p>
+
+      <div class="modules-grid">
+        <a class="module module--1" id="module-1" href="foundation.html">
+          <span class="module__emoji" aria-hidden="true">🏛</span>
+          <span class="module__num">01</span>
+          <h3 class="module__title">Фундамент</h3>
+          <p class="module__text">Что такое блокчейн простыми словами.</p>
+        </a>
+        <a class="module module--2 module--key" id="module-2" href="security.html">
+          <span class="module__emoji" aria-hidden="true">🛡</span>
+          <span class="module__badge">Главный блок</span>
+          <span class="module__num">02</span>
+          <h3 class="module__title">Безопасность</h3>
+          <p class="module__text">Холодные и горячие кошельки. Как не попасть на скам.</p>
+        </a>
+        <a class="module module--3" id="module-3" href="exchange.html">
+          <span class="module__emoji" aria-hidden="true">🤝</span>
+          <span class="module__num">03</span>
+          <h3 class="module__title">Биржи и P2P</h3>
+          <p class="module__text">Как купить и продать крипту за рубли, тенге и доллары.</p>
+        </a>
+        <a class="module module--4" id="module-4" href="analysis.html">
+          <span class="module__emoji" aria-hidden="true">📊</span>
+          <span class="module__num">04</span>
+          <h3 class="module__title">Анализ</h3>
+          <p class="module__text">Как отличить фундаментальный проект от «щиткоина».</p>
+        </a>
+        <a class="module module--5" id="module-5" href="legal.html">
+          <span class="module__emoji" aria-hidden="true">📑</span>
+          <span class="module__num">05</span>
+          <h3 class="module__title">Налоги и легализация</h3>
+          <p class="module__text">Как спать спокойно.</p>
+        </a>
+        <a class="module module--6" id="module-6" href="practice.html">
+          <span class="module__emoji" aria-hidden="true">🛠</span>
+          <span class="module__num">06</span>
+          <h3 class="module__title">Практика</h3>
+          <p class="module__kicker">Действия, воркшопы</p>
+          <p class="module__text">
+            Самый популярный формат онлайн-курсов — когда теория превращается в опыт на реальных кейсах.
+          </p>
+        </a>
+        <a class="module module--7" id="module-7" href="strategy.html">
+          <span class="module__emoji" aria-hidden="true">♟</span>
+          <span class="module__num">07</span>
+          <h3 class="module__title">Стратегии</h3>
+          <p class="module__kicker">Инвестиции, портфель</p>
+          <p class="module__text">Как распределять активы и мыслить на долгий срок, а не на один свечной паттерн.</p>
+        </a>
+        <a class="module module--8" id="module-8" href="nft-web3.html">
+          <span class="module__emoji" aria-hidden="true">🔗</span>
+          <span class="module__num">08</span>
+          <h3 class="module__title">NFT и Web3</h3>
+          <p class="module__kicker">Тренды, будущее</p>
+          <p class="module__text">Современный курс не обходит стороной новые технологии и риски хайпа.</p>
+        </a>
+        <a class="module module--9" id="module-9" href="psychology.html">
+          <span class="module__emoji" aria-hidden="true">🧠</span>
+          <span class="module__num">09</span>
+          <h3 class="module__title">Психология</h3>
+          <p class="module__kicker">FOMO, дисциплина</p>
+          <p class="module__text">В крипте психология важнее графиков: учимся не поддаваться толпе и держать план.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="dash-section steps-section" id="roadmap" aria-labelledby="roadmap-heading">
+      <h2 id="roadmap-heading" class="section-heading">Ваш путь: пять шагов</h2>
+      <p class="section-lead section-lead--tight">
+        Не абстрактные «модули», а последовательность действий — от первого кошелька до фиксации прибыли. Читабельные карточки в одном столбце, как на главном экране кабинета.
+      </p>
+
+      <div class="steps-layout">
+        <div class="steps-rail" aria-hidden="true">
+          <div class="steps-rail__track"></div>
+          <div class="steps-rail__fill" id="steps-line-fill"></div>
+        </div>
+
+        <ol class="steps-list">
+          <li class="step-item">
+            <div class="step-card">
+              <span class="step-item__node" aria-hidden="true"></span>
+              <p class="step-card__meta">Шаг 1 · Точка входа (Day 1)</p>
+              <h3 class="step-card__title">Регистрация и первый кошелёк</h3>
+              <p class="step-card__text">
+                Создаём безопасный «горячий» кошелёк, записываем сид-фразу на бумагу и убираем цифровые следы. Первый запуск без паники.
+              </p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-card">
+              <span class="step-item__node" aria-hidden="true"></span>
+              <p class="step-card__meta">Шаг 2 · Боевое крещение (Week 1)</p>
+              <h3 class="step-card__title">Первая покупка на P2P</h3>
+              <p class="step-card__text">
+                Меняем фиат (рубли или тенге) на первые $10–50 в USDT. Разбираемся в сетях вывода, чтобы не потерять деньги на комиссиях и «не той» сети.
+              </p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-card">
+              <span class="step-item__node" aria-hidden="true"></span>
+              <p class="step-card__meta">Шаг 3 · Сборка портфеля (Week 2)</p>
+              <h3 class="step-card__title">Инвестиционный фундамент</h3>
+              <p class="step-card__text">
+                Покупаем базу (BTC / ETH) и учимся распределять риски. Без ставки «всей котлеты» в одну монету.
+              </p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-card">
+              <span class="step-item__node" aria-hidden="true"></span>
+              <p class="step-card__meta">Шаг 4 · Работа с инструментами (Week 3)</p>
+              <h3 class="step-card__title">Анализ и мониторинг</h3>
+              <p class="step-card__text">
+                Подключаем портфель к DeBank, читаем графики на TradingView и следим за новостями проектов без хайпа в ленте.
+              </p>
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-card">
+              <span class="step-item__node" aria-hidden="true"></span>
+              <p class="step-card__meta">Шаг 5 · Фиксация и масштабирование (Month 1)</p>
+              <h3 class="step-card__title">Первый профит и безопасность</h3>
+              <p class="step-card__text">
+                Учимся выводить прибыль обратно в фиат или аккуратно перекладывать в стейкинг под проценты — с чек-листом по безопасности.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <nav class="materials-strip" aria-label="Материалы по темам курса">
+        <span class="materials-strip__label">Все темы:</span>
+        <a href="foundation.html">Фундамент</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="security.html">Безопасность</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="exchange.html">Биржи</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="analysis.html">Анализ</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="legal.html">Налоги</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="practice.html">Практика</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="strategy.html">Стратегии</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="nft-web3.html">NFT / Web3</a>
+        <span class="materials-strip__dot" aria-hidden="true">·</span>
+        <a href="psychology.html">Психология</a>
+      </nav>
+    </section>
+
+    <footer class="dash-footer">
+      <section class="dash-section footer-block" aria-labelledby="trust-heading">
+        <h2 id="trust-heading" class="section-heading">Почему нам доверяют</h2>
+        <div class="stats-row">
+          <div class="stat-card">
+            <strong class="stat-card__value">$4.2M+</strong>
+            <span class="stat-card__label">общий капитал учеников</span>
+          </div>
+          <div class="stat-card">
+            <strong class="stat-card__value">5 000+</strong>
+            <span class="stat-card__label">выпускников программы</span>
+          </div>
+          <div class="stat-card">
+            <strong class="stat-card__value">7 лет</strong>
+            <span class="stat-card__label">на рынке крипто-образования</span>
+          </div>
+        </div>
+        <figure class="case-card">
+          <blockquote class="case-card__quote">
+            «Иван зашёл с $500, сейчас в портфеле $1200 и 0 ошибок при переводах».
+          </blockquote>
+          <figcaption class="case-card__cap">Кейс ученика · P2P и безопасность</figcaption>
+        </figure>
+        <p class="logos-label">Партнёры и площадки</p>
+        <ul class="logo-row" aria-label="Логотипы партнёров (текстовые плейсхолдеры)">
+          <li>Binance</li>
+          <li>Bybit</li>
+          <li>CoinMarketCap</li>
+          <li>DeBank</li>
+        </ul>
+      </section>
+
+      <section class="dash-section footer-block" aria-labelledby="stack-heading">
+        <h2 id="stack-heading" class="section-heading">Инструменты · The Stack</h2>
+        <p class="section-lead">Что освоите на практике — добавляет экспертности шаблону.</p>
+        <ul class="stack-list">
+          <li>TradingView</li>
+          <li>MetaMask</li>
+          <li>CoinMarketCap</li>
+          <li>DeBank</li>
+        </ul>
+      </section>
+
+      <section class="dash-section footer-block" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="section-heading">Ответы на страхи</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Нужно ли математическое образование?</summary>
+            <p>Нет. Даём интуицию и чек-листы, а не формулы для академии.</p>
+          </details>
+          <details class="faq-item">
+            <summary>С какой суммы можно начать?</summary>
+            <p>Хоть с $10 — сначала отрабатываем безопасность и микро-сделки.</p>
+          </details>
+          <details class="faq-item">
+            <summary>А если рынок упадёт?</summary>
+            <p>Учим зарабатывать и на падении: риск-менеджмент и стратегии, не «вечный лонг».</p>
+          </details>
+        </div>
+      </section>
+    </footer>
+  </main>
+
+  <button
+    type="button"
+    class="glossary-fab"
+    id="glossary-toggle"
+    aria-expanded="false"
+    aria-controls="glossary-panel"
+  >
+    Глоссарий
+  </button>
+  <div class="glossary-overlay" id="glossary-overlay" aria-hidden="true"></div>
+  <aside class="glossary-panel" id="glossary-panel" role="dialog" aria-labelledby="glossary-title" aria-modal="true">
+    <div class="glossary-panel__head">
+      <h2 id="glossary-title" class="glossary-panel__title">Термины</h2>
+      <button type="button" class="glossary-panel__close" id="glossary-close" aria-label="Закрыть глоссарий">
+        ×
+      </button>
+    </div>
+    <dl class="glossary-list">
+      <div class="glossary-row">
+        <dt>Холдить</dt>
+        <dd>Держать актив долго, не реагируя на краткосрочный шум рынка.</dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Ликвидность</dt>
+        <dd>Насколько быстро актив можно продать по справедливой цене без проскальзывания.</dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Газ</dt>
+        <dd>Комиссия сети (например Ethereum) за выполнение транзакции или смарт-контракта.</dd>
+      </div>
+    </dl>
+  </aside>
+
+  <script>
+    (function () {
+      var SESSION_KEY = "site_landing_unlocked";
+      try {
+        if (sessionStorage.getItem(SESSION_KEY) !== "1") {
+          location.replace("index.html");
+        }
+      } catch (e) {
+        location.replace("index.html");
+      }
+    })();
+  </script>
+  <script src="js/timer.js"></script>
+  <script src="js/rates.js"></script>
+  <script src="js/steps-progress.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    (function () {
+      var stage = document.getElementById("landing-stage");
+      if (!stage) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        stage.classList.add("is-visible");
+        return;
+      }
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(function () {
+          stage.classList.add("is-visible");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
