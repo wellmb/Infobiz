@@ -22,6 +22,12 @@ var COINGECKO_URL =
     return "$" + Math.round(n).toLocaleString("en-US");
   }
 
+  /** Только конечные положительные числа из ответа API (защита от мусора в JSON). */
+  function safeUsd(x) {
+    var n = Number(x);
+    return Number.isFinite(n) && n > 0 && n < 1e12 ? n : null;
+  }
+
   function load() {
     fetch(COINGECKO_URL, { cache: "no-store" })
       .then(function (r) {
@@ -29,8 +35,9 @@ var COINGECKO_URL =
         return r.json();
       })
       .then(function (data) {
-        var b = data.bitcoin && data.bitcoin.usd;
-        var e = data.ethereum && data.ethereum.usd;
+        if (!data || typeof data !== "object") return;
+        var b = data.bitcoin && safeUsd(data.bitcoin.usd);
+        var e = data.ethereum && safeUsd(data.ethereum.usd);
         if (b) elBtc.textContent = fmt(b);
         if (e) elEth.textContent = fmt(e);
       })

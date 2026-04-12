@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.coingecko.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
+  />
   <title>Crypto Insiders — личный кабинет</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -279,15 +285,107 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary>Нужно ли математическое образование?</summary>
-            <p>Нет. Даём интуицию и чек-листы, а не формулы для академии.</p>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> нет, «высшая математика» не нужна. Мы объясняем логику цифр на уровне таблицы в Excel: проценты, риск на сделку, соотношение «вошёл / вышел».
+                </p>
+                <p>
+                  <strong>Как учим:</strong> шаблоны расчётов, готовые калькуляторы в уроках и визуальные схемы вместо формул с интегралами.
+                </p>
+              </div>
+            </div>
           </details>
           <details class="faq-item">
             <summary>С какой суммы можно начать?</summary>
-            <p>Хоть с $10 — сначала отрабатываем безопасность и микро-сделки.</p>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> можно с $10–20 на P2P или споте — цель первых недель не «разогнать», а безошибочно пройти цикл «пополнил → купил → вывел».
+                </p>
+                <p>
+                  <strong>Как:</strong> фиксируем лимит «учебного» кошелька отдельно от бытовых денег и не повышаем риск, пока не закрыты базовые чек-листы по безопасности.
+                </p>
+              </div>
+            </div>
           </details>
           <details class="faq-item">
             <summary>А если рынок упадёт?</summary>
-            <p>Учим зарабатывать и на падении: риск-менеджмент и стратегии, не «вечный лонг».</p>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> падение — часть рынка. Мы учим не «угадывать дно», а управлять размером позиции, стоп-логикой и психологией, чтобы переждать просадку без маржин-колла.
+                </p>
+                <p>
+                  <strong>Как:</strong> сценарии для бокового тренда и медвежки, работа с кэшем и стейкингом только после отдельного блока по рискам.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Сколько времени в неделю нужно курсу?</summary>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> ориентир 4–7 часов в неделю: видео + практика. Можно медленнее, но важен регулярный ритм, иначе забываются настройки кошельков и бирж.
+                </p>
+                <p>
+                  <strong>Как:</strong> короткие модули и чек-листы «на одно окно», чтобы уложиться в вечер после работы.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Можно ли совмещать с основной работой?</summary>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> да, курс заточен под занятых людей: без обязаловки сидеть у графика 24/7.
+                </p>
+                <p>
+                  <strong>Как:</strong> материалы доступны в записи, а практика — маленькими шагами (кошелёк, тестовая сумма, один тип сделки за раз).
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Я «ноль» в технологиях — потяну?</summary>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> да, если готовы повторять действия по инструкции. Блокчейн пугает терминами, но по кликам это обычные формы и подтверждения.
+                </p>
+                <p>
+                  <strong>Как:</strong> отдельный модуль «Фундамент» простыми словами + скринкасты «нажми сюда» для MetaMask и бирж.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Нужен ли английский для бирж и инструментов?</summary>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> базового школьного уровня достаточно: кнопки в интерфейсах повторяются, а критичные термины мы даём с переводом.
+                </p>
+                <p>
+                  <strong>Как:</strong> шпаргалки по экранам KYC, вывода и ордеров + что искать в поддержке, если что-то пошло не так.
+                </p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Как не попасть на скам в личных сообщениях?</summary>
+            <div class="faq-item__body">
+              <div class="faq-item__inner">
+                <p>
+                  <strong>Коротко:</strong> никто из «поддержки» не пишет первым в Telegram и не просит сид-фразу или «тестовый перевод».
+                </p>
+                <p>
+                  <strong>Как:</strong> в модуле «Безопасность» — чек-лист по ссылкам, 2FA, холодным кошелькам и типовым схемам фишинга с разбором кейсов.
+                </p>
+              </div>
+            </div>
           </details>
         </div>
       </section>
@@ -306,39 +404,97 @@
   <div class="glossary-overlay" id="glossary-overlay" aria-hidden="true"></div>
   <aside class="glossary-panel" id="glossary-panel" role="dialog" aria-labelledby="glossary-title" aria-modal="true">
     <div class="glossary-panel__head">
-      <h2 id="glossary-title" class="glossary-panel__title">Термины</h2>
+      <h2 id="glossary-title" class="glossary-panel__title">Глоссарий трейдера</h2>
       <button type="button" class="glossary-panel__close" id="glossary-close" aria-label="Закрыть глоссарий">
         ×
       </button>
     </div>
+    <p class="glossary-intro">
+      Здесь — не «сухие» определения из Википедии, а <strong>что термин значит на практике</strong> и <strong>как с ним работать</strong> в кошельке, на бирже и в голове. Откройте нужный пункт и держите панель под рукой во время сделок.
+    </p>
     <dl class="glossary-list">
       <div class="glossary-row">
-        <dt>Холдить</dt>
-        <dd>Держать актив долго, не реагируя на краткосрочный шум рынка.</dd>
+        <dt>Холдить (HODL)</dt>
+        <dd>
+          <p><strong>Что это:</strong> стратегия не продавать актив месяцами и годами, игнорируя краткосрочные просадки.</p>
+          <p><strong>Как применять:</strong> завести отдельный «долгий» кошелёк или подсчёт на бирже, не смешивать с дневной торговлей; заранее решить, при каких условиях вы всё же пересмотрите тезис (например, взлом протокола или смена регулирования).</p>
+        </dd>
       </div>
       <div class="glossary-row">
         <dt>Ликвидность</dt>
-        <dd>Насколько быстро актив можно продать по справедливой цене без проскальзывания.</dd>
+        <dd>
+          <p><strong>Что это:</strong> насколько легко купить или продать актив близко к «справедливой» цене без сильного движения стакана против вас.</p>
+          <p><strong>Как проверять:</strong> смотреть объём за 24ч, спред и глубину стакана; на мелких монетах уменьшать размер сделки и использовать лимитные ордера.</p>
+        </dd>
       </div>
       <div class="glossary-row">
-        <dt>Газ</dt>
-        <dd>Комиссия сети (например Ethereum) за выполнение транзакции или смарт-контракта.</dd>
+        <dt>Газ (Gas)</dt>
+        <dd>
+          <p><strong>Что это:</strong> комиссия сети (чаще Ethereum и L2) за запись транзакции или вызов смарт-контракта. Платится в нативной монете сети (ETH и т.п.).</p>
+          <p><strong>Как экономить:</strong> следить за сетью (gwei), выбирать время суток с меньшей загрузкой, использовать L2 или мост только после проверки контракта.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Стейкинг</dt>
+        <dd>
+          <p><strong>Что это:</strong> блокировка монет в протоколе для поддержки сети (PoS) или ликвидности в обмен на вознаграждение.</p>
+          <p><strong>Как безопасно:</strong> читать условия разблокировки (unbonding), не вводить сид на сторонних сайтах и отличать официальные приложения валидаторов от фейков.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>APR и APY</dt>
+        <dd>
+          <p><strong>Что это:</strong> APR — простая годовая ставка без реинвестирования; APY — с учётом сложного процента, если доход реинвестируется.</p>
+          <p><strong>Как сравнивать:</strong> всегда смотреть, что именно обещает протокол, в какой валюте выплата и какие риски (депег стейбла, IL в пулах).</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Проскальзывание (slippage)</dt>
+        <dd>
+          <p><strong>Что это:</strong> разница между ожидаемой ценой сделки и фактической из-за движения рынка между отправкой и исполнением.</p>
+          <p><strong>Как снизить:</strong> уменьшить сумму, включить лимитный ордер или понизить допустимый slippage в DeFi — но слишком низкий может привести к отмене сделки.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Кит</dt>
+        <dd>
+          <p><strong>Что это:</strong> крупный держатель, чьи переводы или сделки могут сдвинуть цену на тонком рынке.</p>
+          <p><strong>Как использовать:</strong> смотреть ончейн-эксплореры и агрегаторы крупных транзакций как сигнал волатильности, а не как «сигнал к покупке» без контекста.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Памп и дамп</dt>
+        <dd>
+          <p><strong>Что это:</strong> резкий искусственный рост цены (часто на хайпе) и последующая продажа «на толпе».</p>
+          <p><strong>Как не попасться:</strong> избегать закрытых «VIP-сигналов», проверять объём и распределение токенов, не входить по FOMO в вертикальную свечу без плана выхода.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Стейблкоин</dt>
+        <dd>
+          <p><strong>Что это:</strong> токен, привязанный к фиату (чаще $1), удобный для хранения стоимости и переводов между биржами.</p>
+          <p><strong>Как выбирать:</strong> USDT/USDC/DAI и др. отличаются резервами и регуляторикой; для долгого хранения изучаем тип обеспечения и историю депега.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>KYC</dt>
+        <dd>
+          <p><strong>Что это:</strong> «Know Your Customer» — верификация личности на бирже для соблюдения закона и снижения отмывания денег.</p>
+          <p><strong>Как проходить:</strong> загружать чёткие фото документов, использовать реальные данные и включать 2FA сразу после одобрения.</p>
+        </dd>
+      </div>
+      <div class="glossary-row">
+        <dt>Бридж (между сетями)</dt>
+        <dd>
+          <p><strong>Что это:</strong> перевод токена из одной блокчейн-сети в другую через мост или нативный вывод биржи.</p>
+          <p><strong>Как безопасно:</strong> сверять контракт моста, сумму комиссии и конечную сеть получателя; тестировать маленькой суммой при первом использовании.</p>
+        </dd>
       </div>
     </dl>
   </aside>
 
-  <script>
-    (function () {
-      var SESSION_KEY = "site_landing_unlocked";
-      try {
-        if (sessionStorage.getItem(SESSION_KEY) !== "1") {
-          location.replace("index.html");
-        }
-      } catch (e) {
-        location.replace("index.html");
-      }
-    })();
-  </script>
+  <script src="js/gate-config.js"></script>
+  <script src="js/session-guard.js"></script>
   <script src="js/timer.js"></script>
   <script src="js/rates.js"></script>
   <script src="js/steps-progress.js"></script>

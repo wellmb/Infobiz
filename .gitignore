@@ -1,0 +1,10 @@
+# Локальные секреты гейта (пароль курса) — не коммитить
+js/gate-config.js
+
+# ОС и редакторы
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log
+.env
+.env.*
