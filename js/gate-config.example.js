@@ -5,6 +5,6 @@
  * 3) Заливайте на хостинг вместе с остальными файлами — js/gate-config.js не кладите в открытый Git (он в .gitignore).
  */
 window.__CRYPTO_INSIDERS_GATE__ = {
-  password: "ВАШ_ПАРОЛЬ",
+  password: "EDM?",
   sessionKey: "site_landing_unlocked",
 };
